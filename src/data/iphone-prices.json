@@ -1,0 +1,30 @@
+{
+  "brand": "SPR",
+  "currency": "MYR",
+  "whatsappNumber": "601154089054",
+  "disclaimer": "Prices shown are estimates. Final price may vary after in-store inspection. Water damage, mainboard issues, Face ID/True Tone faults may require diagnosis.",
+  "models": [
+    { "id": "ip11", "name": "iPhone 11" },
+    { "id": "ip12", "name": "iPhone 12" },
+    { "id": "ip13", "name": "iPhone 13" },
+    { "id": "ip14pm", "name": "iPhone 14 Pro Max" },
+    { "id": "ip15", "name": "iPhone 15" }
+  ],
+  "issues": [
+    { "id": "screen", "name": "Screen Replacement" },
+    { "id": "battery", "name": "Battery Replacement" },
+    { "id": "charging", "name": "Charging Port" },
+    { "id": "backglass", "name": "Back Glass" },
+    { "id": "camera", "name": "Camera" },
+    { "id": "diagnosis", "name": "Diagnosis (Mainboard/Water)" }
+  ],
+  "prices": [
+    { "modelId": "ip11", "issueId": "screen", "type": "range", "min": 299, "max": 399, "warrantyDays": 90, "eta": "30-60 min", "notes": "Depends on screen quality." },
+    { "modelId": "ip11", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "30-45 min", "notes": "Battery brand may vary." },
+    { "modelId": "ip12", "issueId": "screen", "type": "fixed", "price": 499, "warrantyDays": 90, "eta": "45-90 min", "notes": "True Tone depends on condition." },
+    { "modelId": "ip13", "issueId": "battery", "type": "range", "min": 229, "max": 289, "warrantyDays": 30, "eta": "30-45 min", "notes": "Final depends on battery brand." },
+    { "modelId": "ip14pm", "issueId": "backglass", "type": "from", "from": 499, "warrantyDays": 30, "eta": "2-4 hours", "notes": "Frame condition may affect." },
+    { "modelId": "ip15", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "Possible sub-board/mainboard issue." },
+    { "modelId": "ip12", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis; quote after check." }
+  ]
+}
