@@ -4,38 +4,49 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import { StepBar } from '@/components/StepBar';
 import { Card, ErrorBox } from '@/components/Card';
-import { getModels, getIssues } from '@/lib/quote';
+import { getModels, getIssues, getBrandById } from '@/lib/quote';
 
 function IssueContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const brandId = searchParams.get('brand');
   const modelId = searchParams.get('model');
 
   const models = getModels();
   const issues = getIssues();
   const model = models.find((m) => m.id === modelId);
+  const brand = brandId ? getBrandById(brandId) : null;
+
+  if (!brandId || !brand) {
+    return (
+      <div>
+        <StepBar current={3} />
+        <ErrorBox message="No brand selected." onRetry={() => router.push('/')} />
+      </div>
+    );
+  }
 
   if (!model) {
     return (
       <div>
-        <StepBar current={2} />
-        <ErrorBox message="No model selected." onRetry={() => router.push('/')} />
+        <StepBar current={3} />
+        <ErrorBox message="No model selected." onRetry={() => router.push(`/model?brand=${brandId}`)} />
       </div>
     );
   }
 
   return (
     <div>
-      <StepBar current={2} />
+      <StepBar current={3} />
 
       <div className="text-center mb-8">
         <h1 className="text-2xl font-bold text-gray-900 mb-2">What Needs Repair?</h1>
-        <p className="text-gray-600">{model.name} - Select the issue</p>
+        <p className="text-gray-600">{brand.name} {model.name} - Select the issue</p>
       </div>
 
       <div className="space-y-3">
         {issues.map((issue) => (
-          <Card key={issue.id} onClick={() => router.push(`/auth?model=${modelId}&issue=${issue.id}`)} className="p-4">
+          <Card key={issue.id} onClick={() => router.push(`/auth?brand=${brandId}&model=${modelId}&issue=${issue.id}`)} className="p-4">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +64,7 @@ function IssueContent() {
         ))}
       </div>
 
-      <button onClick={() => router.push('/')} className="mt-6 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2">
+      <button onClick={() => router.push(`/model?brand=${brandId}`)} className="mt-6 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2">
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>

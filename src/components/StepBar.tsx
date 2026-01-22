@@ -1,10 +1,11 @@
 'use client';
 
 const steps = [
-  { number: 1, label: 'Model' },
-  { number: 2, label: 'Issue' },
-  { number: 3, label: 'Verify' },
-  { number: 4, label: 'Quote' },
+  { number: 1, label: 'Brand' },
+  { number: 2, label: 'Model' },
+  { number: 3, label: 'Issue' },
+  { number: 4, label: 'Verify' },
+  { number: 5, label: 'Quote' },
 ];
 
 interface StepBarProps {

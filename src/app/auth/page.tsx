@@ -4,11 +4,12 @@ import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { StepBar } from '@/components/StepBar';
 import { Card, Spinner, ErrorBox } from '@/components/Card';
-import { getModels, getIssues } from '@/lib/quote';
+import { getModels, getIssues, getBrandById } from '@/lib/quote';
 
 function AuthContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const brandId = searchParams.get('brand');
   const modelId = searchParams.get('model');
   const issueId = searchParams.get('issue');
 
@@ -19,13 +20,14 @@ function AuthContent() {
 
   const models = getModels();
   const issues = getIssues();
+  const brand = brandId ? getBrandById(brandId) : null;
   const model = models.find((m) => m.id === modelId);
   const issue = issues.find((i) => i.id === issueId);
 
-  if (!model || !issue) {
+  if (!brand || !model || !issue) {
     return (
       <div>
-        <StepBar current={3} />
+        <StepBar current={4} />
         <ErrorBox message="Missing selection." onRetry={() => router.push('/')} />
       </div>
     );
@@ -52,7 +54,7 @@ function AuthContent() {
         return;
       }
 
-      router.push(`/verify?model=${modelId}&issue=${issueId}&phone=${encodeURIComponent(phone)}`);
+      router.push(`/verify?brand=${brandId}&model=${modelId}&issue=${issueId}&phone=${encodeURIComponent(phone)}`);
     } catch {
       setError('Network error.');
     } finally {
@@ -62,7 +64,7 @@ function AuthContent() {
 
   return (
     <div>
-      <StepBar current={3} />
+      <StepBar current={4} />
 
       <div className="text-center mb-8">
         <h1 className="text-2xl font-bold text-gray-900 mb-2">Verify Your Phone</h1>
@@ -71,7 +73,7 @@ function AuthContent() {
 
       <Card className="mb-4 p-4">
         <div className="flex items-center gap-3 text-sm text-gray-600">
-          <span className="font-medium">{model.name}</span>
+          <span className="font-medium">{brand.name} {model.name}</span>
           <span className="text-gray-300">|</span>
           <span>{issue.name}</span>
         </div>
@@ -106,7 +108,7 @@ function AuthContent() {
         </form>
       </Card>
 
-      <button onClick={() => router.push(`/issue?model=${modelId}`)} className="mt-6 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2">
+      <button onClick={() => router.push(`/issue?brand=${brandId}&model=${modelId}`)} className="mt-6 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2">
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>

@@ -1,38 +1,123 @@
 'use client';
 
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { StepBar } from '@/components/StepBar';
-import { Card } from '@/components/Card';
-import { getModels, getBrand } from '@/lib/quote';
+import { getBrands, getModelsByBrand, getIssues, getBrand } from '@/lib/quote';
 
 export default function HomePage() {
   const router = useRouter();
-  const models = getModels();
-  const brand = getBrand();
+  const storeBrand = getBrand();
+  const brands = getBrands();
+  const issues = getIssues();
+
+  const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedModel, setSelectedModel] = useState('');
+  const [selectedIssue, setSelectedIssue] = useState('');
+  const [phone, setPhone] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const models = selectedBrand ? getModelsByBrand(selectedBrand) : [];
+
+  const handleBrandChange = (brandId: string) => {
+    setSelectedBrand(brandId);
+    setSelectedModel('');
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!selectedBrand || !selectedModel || !selectedIssue || !phone) {
+      setError('Please fill in all fields');
+      return;
+    }
+
+    setError(null);
+    setLoading(true);
+
+    try {
+      const res = await fetch('/api/otp/request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phone, modelId: selectedModel, issueId: selectedIssue }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error);
+        return;
+      }
+
+      router.push(`/verify?brand=${selectedBrand}&model=${selectedModel}&issue=${selectedIssue}&phone=${encodeURIComponent(phone)}`);
+    } catch {
+      setError('Network error');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <div>
-      <StepBar current={1} />
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+      <h1 className="text-xl font-medium text-gray-800 mb-8">{storeBrand.toLowerCase()} price check</h1>
 
-      <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">{brand} Price Check</h1>
-        <p className="text-gray-600">Select your iPhone model to get a repair quote</p>
-      </div>
+      <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
+        <select
+          value={selectedBrand}
+          onChange={(e) => handleBrandChange(e.target.value)}
+          className="w-full px-4 py-3 border-2 border-gray-800 rounded-full bg-white text-center text-gray-700 focus:outline-none focus:border-blue-500 appearance-none cursor-pointer"
+        >
+          <option value="">Select Brand</option>
+          {brands.map((brand) => (
+            <option key={brand.id} value={brand.id}>{brand.name}</option>
+          ))}
+        </select>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {models.map((model) => (
-          <Card key={model.id} onClick={() => router.push(`/issue?model=${model.id}`)} className="p-4">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-3 bg-gray-100 rounded-lg flex items-center justify-center">
-                <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="font-medium text-gray-900 text-sm">{model.name}</p>
-            </div>
-          </Card>
-        ))}
-      </div>
+        <select
+          value={selectedModel}
+          onChange={(e) => setSelectedModel(e.target.value)}
+          disabled={!selectedBrand}
+          className="w-full px-4 py-3 border-2 border-gray-800 rounded-full bg-white text-center text-gray-700 focus:outline-none focus:border-blue-500 appearance-none cursor-pointer disabled:bg-gray-100 disabled:cursor-not-allowed disabled:border-gray-400"
+        >
+          <option value="">Select Model</option>
+          {models.map((model) => (
+            <option key={model.id} value={model.id}>{model.name}</option>
+          ))}
+        </select>
+
+        <select
+          value={selectedIssue}
+          onChange={(e) => setSelectedIssue(e.target.value)}
+          disabled={!selectedModel}
+          className="w-full px-4 py-3 border-2 border-gray-800 rounded-full bg-white text-center text-gray-700 focus:outline-none focus:border-blue-500 appearance-none cursor-pointer disabled:bg-gray-100 disabled:cursor-not-allowed disabled:border-gray-400"
+        >
+          <option value="">Repair Issue</option>
+          {issues.map((issue) => (
+            <option key={issue.id} value={issue.id}>{issue.name}</option>
+          ))}
+        </select>
+
+        <input
+          type="tel"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          placeholder="Phone Number"
+          disabled={!selectedIssue}
+          className="w-full px-4 py-3 border-2 border-gray-800 rounded-full bg-white text-center text-gray-700 focus:outline-none focus:border-blue-500 placeholder-gray-500 disabled:bg-gray-100 disabled:cursor-not-allowed disabled:border-gray-400"
+        />
+
+        {error && (
+          <p className="text-red-500 text-center text-sm">{error}</p>
+        )}
+
+        <button
+          type="submit"
+          disabled={loading || !selectedBrand || !selectedModel || !selectedIssue || !phone}
+          className="w-full px-4 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+        >
+          {loading ? 'Sending...' : 'Get Quote'}
+        </button>
+      </form>
     </div>
   );
 }

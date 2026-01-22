@@ -221,3 +221,44 @@ export function getWhatsAppNumber() {
   const priceData = cachedData || (priceDataJson as PriceData);
   return priceData.whatsappNumber;
 }
+
+// Brand functions
+export function getBrands() {
+  const priceData = cachedData || (priceDataJson as PriceData);
+  return priceData.brands || [];
+}
+
+export async function getBrandsAsync() {
+  const priceData = await loadPriceData();
+  return priceData.brands || [];
+}
+
+export function getModelsByBrand(brandId: string) {
+  const priceData = cachedData || (priceDataJson as PriceData);
+  return priceData.models.filter((m) => m.brand === brandId);
+}
+
+export async function getModelsByBrandAsync(brandId: string) {
+  const priceData = await loadPriceData();
+  return priceData.models.filter((m) => m.brand === brandId);
+}
+
+export function validateBrandId(brandId: string): boolean {
+  const priceData = cachedData || (priceDataJson as PriceData);
+  return priceData.brands?.some((b) => b.id === brandId) || false;
+}
+
+export async function validateBrandIdAsync(brandId: string): Promise<boolean> {
+  const priceData = await loadPriceData();
+  return priceData.brands?.some((b) => b.id === brandId) || false;
+}
+
+export function getBrandById(brandId: string) {
+  const priceData = cachedData || (priceDataJson as PriceData);
+  return priceData.brands?.find((b) => b.id === brandId);
+}
+
+export async function getBrandByIdAsync(brandId: string) {
+  const priceData = await loadPriceData();
+  return priceData.brands?.find((b) => b.id === brandId);
+}

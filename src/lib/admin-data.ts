@@ -5,9 +5,15 @@ import priceDataJson from '@/data/iphone-prices.json';
 const PRICE_DATA_KEY = 'spr:price-data';
 const PRICE_DATA_TTL = 365 * 24 * 60 * 60 * 1000; // 1 year in ms (effectively permanent)
 
+export interface Brand {
+  id: string;
+  name: string;
+}
+
 export interface Model {
   id: string;
   name: string;
+  brand: string;
 }
 
 export interface Issue {
@@ -33,6 +39,7 @@ export interface PriceData {
   currency: string;
   whatsappNumber: string;
   disclaimer: string;
+  brands: Brand[];
   models: Model[];
   issues: Issue[];
   prices: Price[];
