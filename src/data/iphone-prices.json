@@ -4,715 +4,5259 @@
   "whatsappNumber": "601154089054",
   "disclaimer": "Prices shown are estimates. Final price may vary after in-store inspection. Water damage, mainboard issues, Face ID/True Tone faults may require diagnosis.",
   "brands": [
-    { "id": "apple", "name": "Apple" },
-    { "id": "samsung", "name": "Samsung" },
-    { "id": "huawei", "name": "Huawei" },
-    { "id": "oppo", "name": "OPPO" },
-    { "id": "xiaomi", "name": "Xiaomi" },
-    { "id": "vivo", "name": "Vivo" },
-    { "id": "google", "name": "Google" },
-    { "id": "oneplus", "name": "OnePlus" },
-    { "id": "realme", "name": "Realme" },
-    { "id": "honor", "name": "Honor" }
+    {
+      "id": "apple",
+      "name": "Apple"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung"
+    },
+    {
+      "id": "huawei",
+      "name": "Huawei"
+    },
+    {
+      "id": "oppo",
+      "name": "OPPO"
+    },
+    {
+      "id": "xiaomi",
+      "name": "Xiaomi"
+    },
+    {
+      "id": "vivo",
+      "name": "Vivo"
+    },
+    {
+      "id": "google",
+      "name": "Google"
+    },
+    {
+      "id": "oneplus",
+      "name": "OnePlus"
+    },
+    {
+      "id": "realme",
+      "name": "Realme"
+    },
+    {
+      "id": "honor",
+      "name": "Honor"
+    }
   ],
   "models": [
-    { "id": "ip11", "name": "iPhone 11", "brand": "apple" },
-    { "id": "ip12", "name": "iPhone 12", "brand": "apple" },
-    { "id": "ip13", "name": "iPhone 13", "brand": "apple" },
-    { "id": "ip14pm", "name": "iPhone 14 Pro Max", "brand": "apple" },
-    { "id": "ip15", "name": "iPhone 15", "brand": "apple" },
-    { "id": "ip15pro", "name": "iPhone 15 Pro", "brand": "apple" },
-    { "id": "ip15promax", "name": "iPhone 15 Pro Max", "brand": "apple" },
-    { "id": "ip16", "name": "iPhone 16", "brand": "apple" },
-    { "id": "ip16pro", "name": "iPhone 16 Pro", "brand": "apple" },
-    { "id": "ip16promax", "name": "iPhone 16 Pro Max", "brand": "apple" },
-
-    { "id": "s23", "name": "Galaxy S23", "brand": "samsung" },
-    { "id": "s23plus", "name": "Galaxy S23+", "brand": "samsung" },
-    { "id": "s23ultra", "name": "Galaxy S23 Ultra", "brand": "samsung" },
-    { "id": "s24", "name": "Galaxy S24", "brand": "samsung" },
-    { "id": "s24plus", "name": "Galaxy S24+", "brand": "samsung" },
-    { "id": "s24ultra", "name": "Galaxy S24 Ultra", "brand": "samsung" },
-    { "id": "zfold5", "name": "Galaxy Z Fold 5", "brand": "samsung" },
-    { "id": "zflip5", "name": "Galaxy Z Flip 5", "brand": "samsung" },
-    { "id": "zfold6", "name": "Galaxy Z Fold 6", "brand": "samsung" },
-    { "id": "zflip6", "name": "Galaxy Z Flip 6", "brand": "samsung" },
-
-    { "id": "p60", "name": "P60", "brand": "huawei" },
-    { "id": "p60pro", "name": "P60 Pro", "brand": "huawei" },
-    { "id": "p60art", "name": "P60 Art", "brand": "huawei" },
-    { "id": "mate60", "name": "Mate 60", "brand": "huawei" },
-    { "id": "mate60pro", "name": "Mate 60 Pro", "brand": "huawei" },
-    { "id": "mate60proplus", "name": "Mate 60 Pro+", "brand": "huawei" },
-    { "id": "matex5", "name": "Mate X5", "brand": "huawei" },
-    { "id": "pura70", "name": "Pura 70", "brand": "huawei" },
-    { "id": "pura70pro", "name": "Pura 70 Pro", "brand": "huawei" },
-    { "id": "pura70ultra", "name": "Pura 70 Ultra", "brand": "huawei" },
-
-    { "id": "find-x6", "name": "Find X6", "brand": "oppo" },
-    { "id": "find-x6pro", "name": "Find X6 Pro", "brand": "oppo" },
-    { "id": "find-x7", "name": "Find X7", "brand": "oppo" },
-    { "id": "find-x7ultra", "name": "Find X7 Ultra", "brand": "oppo" },
-    { "id": "find-n3", "name": "Find N3", "brand": "oppo" },
-    { "id": "find-n3flip", "name": "Find N3 Flip", "brand": "oppo" },
-    { "id": "reno11", "name": "Reno 11", "brand": "oppo" },
-    { "id": "reno11pro", "name": "Reno 11 Pro", "brand": "oppo" },
-
-    { "id": "mi13", "name": "Xiaomi 13", "brand": "xiaomi" },
-    { "id": "mi13pro", "name": "Xiaomi 13 Pro", "brand": "xiaomi" },
-    { "id": "mi13ultra", "name": "Xiaomi 13 Ultra", "brand": "xiaomi" },
-    { "id": "mi14", "name": "Xiaomi 14", "brand": "xiaomi" },
-    { "id": "mi14pro", "name": "Xiaomi 14 Pro", "brand": "xiaomi" },
-    { "id": "mi14ultra", "name": "Xiaomi 14 Ultra", "brand": "xiaomi" },
-    { "id": "mixfold3", "name": "MIX Fold 3", "brand": "xiaomi" },
-    { "id": "mixflip", "name": "MIX Flip", "brand": "xiaomi" },
-    { "id": "redmik70pro", "name": "Redmi K70 Pro", "brand": "xiaomi" },
-
-    { "id": "x100", "name": "X100", "brand": "vivo" },
-    { "id": "x100pro", "name": "X100 Pro", "brand": "vivo" },
-    { "id": "x100ultra", "name": "X100 Ultra", "brand": "vivo" },
-    { "id": "x90pro", "name": "X90 Pro", "brand": "vivo" },
-    { "id": "xfold3", "name": "X Fold 3", "brand": "vivo" },
-    { "id": "xfold3pro", "name": "X Fold 3 Pro", "brand": "vivo" },
-    { "id": "xflip", "name": "X Flip", "brand": "vivo" },
-    { "id": "iqoo12", "name": "iQOO 12", "brand": "vivo" },
-    { "id": "iqoo12pro", "name": "iQOO 12 Pro", "brand": "vivo" },
-
-    { "id": "pixel7", "name": "Pixel 7", "brand": "google" },
-    { "id": "pixel7pro", "name": "Pixel 7 Pro", "brand": "google" },
-    { "id": "pixel8", "name": "Pixel 8", "brand": "google" },
-    { "id": "pixel8pro", "name": "Pixel 8 Pro", "brand": "google" },
-    { "id": "pixel8a", "name": "Pixel 8a", "brand": "google" },
-    { "id": "pixel9", "name": "Pixel 9", "brand": "google" },
-    { "id": "pixel9pro", "name": "Pixel 9 Pro", "brand": "google" },
-    { "id": "pixel9proxl", "name": "Pixel 9 Pro XL", "brand": "google" },
-    { "id": "pixelfold", "name": "Pixel Fold", "brand": "google" },
-
-    { "id": "op11", "name": "OnePlus 11", "brand": "oneplus" },
-    { "id": "op12", "name": "OnePlus 12", "brand": "oneplus" },
-    { "id": "op12r", "name": "OnePlus 12R", "brand": "oneplus" },
-    { "id": "opopen", "name": "OnePlus Open", "brand": "oneplus" },
-    { "id": "opnord3", "name": "OnePlus Nord 3", "brand": "oneplus" },
-    { "id": "opnord4", "name": "OnePlus Nord 4", "brand": "oneplus" },
-
-    { "id": "gt5pro", "name": "GT 5 Pro", "brand": "realme" },
-    { "id": "gt5", "name": "GT 5", "brand": "realme" },
-    { "id": "gt3", "name": "GT 3", "brand": "realme" },
-    { "id": "gt-neo5", "name": "GT Neo 5", "brand": "realme" },
-    { "id": "gt-neo6", "name": "GT Neo 6", "brand": "realme" },
-    { "id": "12proplus", "name": "12 Pro+", "brand": "realme" },
-
-    { "id": "magic6", "name": "Magic 6", "brand": "honor" },
-    { "id": "magic6pro", "name": "Magic 6 Pro", "brand": "honor" },
-    { "id": "magic6ultimate", "name": "Magic 6 Ultimate", "brand": "honor" },
-    { "id": "magic5pro", "name": "Magic 5 Pro", "brand": "honor" },
-    { "id": "magicv2", "name": "Magic V2", "brand": "honor" },
-    { "id": "magicv3", "name": "Magic V3", "brand": "honor" },
-    { "id": "magicvs2", "name": "Magic Vs2", "brand": "honor" },
-    { "id": "honor200pro", "name": "Honor 200 Pro", "brand": "honor" }
+    {
+      "id": "ip11",
+      "name": "iPhone 11",
+      "brand": "apple"
+    },
+    {
+      "id": "ip12",
+      "name": "iPhone 12",
+      "brand": "apple"
+    },
+    {
+      "id": "ip13",
+      "name": "iPhone 13",
+      "brand": "apple"
+    },
+    {
+      "id": "ip14pm",
+      "name": "iPhone 14 Pro Max",
+      "brand": "apple"
+    },
+    {
+      "id": "ip15",
+      "name": "iPhone 15",
+      "brand": "apple"
+    },
+    {
+      "id": "ip15pro",
+      "name": "iPhone 15 Pro",
+      "brand": "apple"
+    },
+    {
+      "id": "ip15promax",
+      "name": "iPhone 15 Pro Max",
+      "brand": "apple"
+    },
+    {
+      "id": "ip16",
+      "name": "iPhone 16",
+      "brand": "apple"
+    },
+    {
+      "id": "ip16pro",
+      "name": "iPhone 16 Pro",
+      "brand": "apple"
+    },
+    {
+      "id": "ip16promax",
+      "name": "iPhone 16 Pro Max",
+      "brand": "apple"
+    },
+    {
+      "id": "s23",
+      "name": "Galaxy S23",
+      "brand": "samsung"
+    },
+    {
+      "id": "s23plus",
+      "name": "Galaxy S23+",
+      "brand": "samsung"
+    },
+    {
+      "id": "s23ultra",
+      "name": "Galaxy S23 Ultra",
+      "brand": "samsung"
+    },
+    {
+      "id": "s24",
+      "name": "Galaxy S24",
+      "brand": "samsung"
+    },
+    {
+      "id": "s24plus",
+      "name": "Galaxy S24+",
+      "brand": "samsung"
+    },
+    {
+      "id": "s24ultra",
+      "name": "Galaxy S24 Ultra",
+      "brand": "samsung"
+    },
+    {
+      "id": "zfold5",
+      "name": "Galaxy Z Fold 5",
+      "brand": "samsung"
+    },
+    {
+      "id": "zflip5",
+      "name": "Galaxy Z Flip 5",
+      "brand": "samsung"
+    },
+    {
+      "id": "zfold6",
+      "name": "Galaxy Z Fold 6",
+      "brand": "samsung"
+    },
+    {
+      "id": "zflip6",
+      "name": "Galaxy Z Flip 6",
+      "brand": "samsung"
+    },
+    {
+      "id": "p60",
+      "name": "P60",
+      "brand": "huawei"
+    },
+    {
+      "id": "p60pro",
+      "name": "P60 Pro",
+      "brand": "huawei"
+    },
+    {
+      "id": "p60art",
+      "name": "P60 Art",
+      "brand": "huawei"
+    },
+    {
+      "id": "mate60",
+      "name": "Mate 60",
+      "brand": "huawei"
+    },
+    {
+      "id": "mate60pro",
+      "name": "Mate 60 Pro",
+      "brand": "huawei"
+    },
+    {
+      "id": "mate60proplus",
+      "name": "Mate 60 Pro+",
+      "brand": "huawei"
+    },
+    {
+      "id": "matex5",
+      "name": "Mate X5",
+      "brand": "huawei"
+    },
+    {
+      "id": "pura70",
+      "name": "Pura 70",
+      "brand": "huawei"
+    },
+    {
+      "id": "pura70pro",
+      "name": "Pura 70 Pro",
+      "brand": "huawei"
+    },
+    {
+      "id": "pura70ultra",
+      "name": "Pura 70 Ultra",
+      "brand": "huawei"
+    },
+    {
+      "id": "find-x6",
+      "name": "Find X6",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-x6pro",
+      "name": "Find X6 Pro",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-x7",
+      "name": "Find X7",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-x7ultra",
+      "name": "Find X7 Ultra",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-n3",
+      "name": "Find N3",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-n3flip",
+      "name": "Find N3 Flip",
+      "brand": "oppo"
+    },
+    {
+      "id": "reno11",
+      "name": "Reno 11",
+      "brand": "oppo"
+    },
+    {
+      "id": "reno11pro",
+      "name": "Reno 11 Pro",
+      "brand": "oppo"
+    },
+    {
+      "id": "mi13",
+      "name": "Xiaomi 13",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mi13pro",
+      "name": "Xiaomi 13 Pro",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mi13ultra",
+      "name": "Xiaomi 13 Ultra",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mi14",
+      "name": "Xiaomi 14",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mi14pro",
+      "name": "Xiaomi 14 Pro",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mi14ultra",
+      "name": "Xiaomi 14 Ultra",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mixfold3",
+      "name": "MIX Fold 3",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mixflip",
+      "name": "MIX Flip",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "redmik70pro",
+      "name": "Redmi K70 Pro",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "x100",
+      "name": "X100",
+      "brand": "vivo"
+    },
+    {
+      "id": "x100pro",
+      "name": "X100 Pro",
+      "brand": "vivo"
+    },
+    {
+      "id": "x100ultra",
+      "name": "X100 Ultra",
+      "brand": "vivo"
+    },
+    {
+      "id": "x90pro",
+      "name": "X90 Pro",
+      "brand": "vivo"
+    },
+    {
+      "id": "xfold3",
+      "name": "X Fold 3",
+      "brand": "vivo"
+    },
+    {
+      "id": "xfold3pro",
+      "name": "X Fold 3 Pro",
+      "brand": "vivo"
+    },
+    {
+      "id": "xflip",
+      "name": "X Flip",
+      "brand": "vivo"
+    },
+    {
+      "id": "iqoo12",
+      "name": "iQOO 12",
+      "brand": "vivo"
+    },
+    {
+      "id": "iqoo12pro",
+      "name": "iQOO 12 Pro",
+      "brand": "vivo"
+    },
+    {
+      "id": "pixel7",
+      "name": "Pixel 7",
+      "brand": "google"
+    },
+    {
+      "id": "pixel7pro",
+      "name": "Pixel 7 Pro",
+      "brand": "google"
+    },
+    {
+      "id": "pixel8",
+      "name": "Pixel 8",
+      "brand": "google"
+    },
+    {
+      "id": "pixel8pro",
+      "name": "Pixel 8 Pro",
+      "brand": "google"
+    },
+    {
+      "id": "pixel8a",
+      "name": "Pixel 8a",
+      "brand": "google"
+    },
+    {
+      "id": "pixel9",
+      "name": "Pixel 9",
+      "brand": "google"
+    },
+    {
+      "id": "pixel9pro",
+      "name": "Pixel 9 Pro",
+      "brand": "google"
+    },
+    {
+      "id": "pixel9proxl",
+      "name": "Pixel 9 Pro XL",
+      "brand": "google"
+    },
+    {
+      "id": "pixelfold",
+      "name": "Pixel Fold",
+      "brand": "google"
+    },
+    {
+      "id": "op11",
+      "name": "OnePlus 11",
+      "brand": "oneplus"
+    },
+    {
+      "id": "op12",
+      "name": "OnePlus 12",
+      "brand": "oneplus"
+    },
+    {
+      "id": "op12r",
+      "name": "OnePlus 12R",
+      "brand": "oneplus"
+    },
+    {
+      "id": "opopen",
+      "name": "OnePlus Open",
+      "brand": "oneplus"
+    },
+    {
+      "id": "opnord3",
+      "name": "OnePlus Nord 3",
+      "brand": "oneplus"
+    },
+    {
+      "id": "opnord4",
+      "name": "OnePlus Nord 4",
+      "brand": "oneplus"
+    },
+    {
+      "id": "gt5pro",
+      "name": "GT 5 Pro",
+      "brand": "realme"
+    },
+    {
+      "id": "gt5",
+      "name": "GT 5",
+      "brand": "realme"
+    },
+    {
+      "id": "gt3",
+      "name": "GT 3",
+      "brand": "realme"
+    },
+    {
+      "id": "gt-neo5",
+      "name": "GT Neo 5",
+      "brand": "realme"
+    },
+    {
+      "id": "gt-neo6",
+      "name": "GT Neo 6",
+      "brand": "realme"
+    },
+    {
+      "id": "12proplus",
+      "name": "12 Pro+",
+      "brand": "realme"
+    },
+    {
+      "id": "magic6",
+      "name": "Magic 6",
+      "brand": "honor"
+    },
+    {
+      "id": "magic6pro",
+      "name": "Magic 6 Pro",
+      "brand": "honor"
+    },
+    {
+      "id": "magic6ultimate",
+      "name": "Magic 6 Ultimate",
+      "brand": "honor"
+    },
+    {
+      "id": "magic5pro",
+      "name": "Magic 5 Pro",
+      "brand": "honor"
+    },
+    {
+      "id": "magicv2",
+      "name": "Magic V2",
+      "brand": "honor"
+    },
+    {
+      "id": "magicv3",
+      "name": "Magic V3",
+      "brand": "honor"
+    },
+    {
+      "id": "magicvs2",
+      "name": "Magic Vs2",
+      "brand": "honor"
+    },
+    {
+      "id": "honor200pro",
+      "name": "Honor 200 Pro",
+      "brand": "honor"
+    },
+    {
+      "id": "s25ultra",
+      "name": "Galaxy S25 Ultra",
+      "brand": "samsung"
+    }
   ],
   "issues": [
-    { "id": "screen", "name": "Screen Replacement" },
-    { "id": "battery", "name": "Battery Replacement" },
-    { "id": "charging", "name": "Charging Port" },
-    { "id": "backglass", "name": "Back Glass" },
-    { "id": "camera", "name": "Camera" },
-    { "id": "diagnosis", "name": "Diagnosis (Mainboard/Water)" }
+    {
+      "id": "screen",
+      "name": "Screen Replacement"
+    },
+    {
+      "id": "battery",
+      "name": "Battery Replacement"
+    },
+    {
+      "id": "charging",
+      "name": "Charging Port"
+    },
+    {
+      "id": "backglass",
+      "name": "Back Glass"
+    },
+    {
+      "id": "camera",
+      "name": "Camera"
+    },
+    {
+      "id": "diagnosis",
+      "name": "Diagnosis (Mainboard/Water)"
+    }
   ],
   "prices": [
-    { "modelId": "ip11", "issueId": "screen", "type": "range", "min": 299, "max": 399, "warrantyDays": 90, "eta": "30-60 min", "notes": "Depends on screen quality." },
-    { "modelId": "ip11", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "30-45 min", "notes": "Battery brand may vary." },
-    { "modelId": "ip11", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "ip11", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip11", "issueId": "camera", "type": "range", "min": 199, "max": 299, "warrantyDays": 30, "eta": "30-60 min", "notes": "Depends on camera module." },
-    { "modelId": "ip11", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip12", "issueId": "screen", "type": "range", "min": 399, "max": 499, "warrantyDays": 90, "eta": "45-90 min", "notes": "True Tone depends on condition." },
-    { "modelId": "ip12", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip12", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "ip12", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip12", "issueId": "camera", "type": "range", "min": 249, "max": 349, "warrantyDays": 30, "eta": "30-60 min", "notes": "" },
-    { "modelId": "ip12", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip13", "issueId": "screen", "type": "range", "min": 499, "max": 599, "warrantyDays": 90, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip13", "issueId": "battery", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip13", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "ip13", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip13", "issueId": "camera", "type": "range", "min": 299, "max": 399, "warrantyDays": 30, "eta": "30-60 min", "notes": "" },
-    { "modelId": "ip13", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip14pm", "issueId": "screen", "type": "range", "min": 899, "max": 1199, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip14pm", "issueId": "battery", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip14pm", "issueId": "charging", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "ip14pm", "issueId": "backglass", "type": "from", "from": 499, "warrantyDays": 30, "eta": "2-4 hours", "notes": "Frame condition may affect." },
-    { "modelId": "ip14pm", "issueId": "camera", "type": "range", "min": 499, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip14pm", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip15", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip15", "issueId": "battery", "type": "fixed", "price": 269, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip15", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "Possible sub-board/mainboard issue." },
-    { "modelId": "ip15", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "ip15", "issueId": "camera", "type": "range", "min": 399, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip15", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip15pro", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip15pro", "issueId": "battery", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip15pro", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "" },
-    { "modelId": "ip15pro", "issueId": "backglass", "type": "from", "from": 499, "warrantyDays": 30, "eta": "2-4 hours", "notes": "" },
-    { "modelId": "ip15pro", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip15pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip15promax", "issueId": "screen", "type": "range", "min": 1299, "max": 1599, "warrantyDays": 90, "eta": "1-2 hours", "notes": "Original or OEM quality available." },
-    { "modelId": "ip15promax", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip15promax", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "" },
-    { "modelId": "ip15promax", "issueId": "backglass", "type": "from", "from": 599, "warrantyDays": 30, "eta": "2-4 hours", "notes": "" },
-    { "modelId": "ip15promax", "issueId": "camera", "type": "range", "min": 599, "max": 899, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip15promax", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip16", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip16", "issueId": "battery", "type": "fixed", "price": 289, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip16", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "" },
-    { "modelId": "ip16", "issueId": "backglass", "type": "fixed", "price": 449, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "ip16", "issueId": "camera", "type": "range", "min": 449, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip16", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip16pro", "issueId": "screen", "type": "range", "min": 1199, "max": 1499, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip16pro", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip16pro", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "" },
-    { "modelId": "ip16pro", "issueId": "backglass", "type": "from", "from": 549, "warrantyDays": 30, "eta": "2-4 hours", "notes": "" },
-    { "modelId": "ip16pro", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip16pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "ip16promax", "issueId": "screen", "type": "range", "min": 1499, "max": 1899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "ip16promax", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "30-45 min", "notes": "" },
-    { "modelId": "ip16promax", "issueId": "charging", "type": "tbd", "warrantyDays": 0, "eta": "Need inspection", "notes": "" },
-    { "modelId": "ip16promax", "issueId": "backglass", "type": "from", "from": 649, "warrantyDays": 30, "eta": "2-4 hours", "notes": "" },
-    { "modelId": "ip16promax", "issueId": "camera", "type": "range", "min": 649, "max": 999, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "ip16promax", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s23", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s23", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s23plus", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23plus", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23plus", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23plus", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23plus", "issueId": "camera", "type": "range", "min": 349, "max": 499, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s23plus", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s23ultra", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23ultra", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23ultra", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s23ultra", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s23ultra", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s23ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s24", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24", "issueId": "camera", "type": "range", "min": 349, "max": 499, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s24", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s24plus", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24plus", "issueId": "battery", "type": "fixed", "price": 239, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24plus", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24plus", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24plus", "issueId": "camera", "type": "range", "min": 399, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s24plus", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "s24ultra", "issueId": "screen", "type": "range", "min": 1099, "max": 1399, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24ultra", "issueId": "battery", "type": "fixed", "price": 269, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24ultra", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "s24ultra", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "s24ultra", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "s24ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "zfold5", "issueId": "screen", "type": "range", "min": 1999, "max": 2499, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "zfold5", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold5", "issueId": "charging", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold5", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "zfold5", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold5", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "zflip5", "issueId": "screen", "type": "range", "min": 1299, "max": 1699, "warrantyDays": 90, "eta": "2-3 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "zflip5", "issueId": "battery", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip5", "issueId": "charging", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip5", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "zflip5", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip5", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "zfold6", "issueId": "screen", "type": "range", "min": 2199, "max": 2699, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "zfold6", "issueId": "battery", "type": "fixed", "price": 369, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold6", "issueId": "charging", "type": "fixed", "price": 269, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold6", "issueId": "backglass", "type": "fixed", "price": 449, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "zfold6", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zfold6", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "zflip6", "issueId": "screen", "type": "range", "min": 1399, "max": 1799, "warrantyDays": 90, "eta": "2-3 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "zflip6", "issueId": "battery", "type": "fixed", "price": 319, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip6", "issueId": "charging", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip6", "issueId": "backglass", "type": "fixed", "price": 379, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "zflip6", "issueId": "camera", "type": "range", "min": 449, "max": 649, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "zflip6", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "p60", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "p60", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "p60pro", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60pro", "issueId": "battery", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60pro", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60pro", "issueId": "camera", "type": "range", "min": 449, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "p60pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "p60art", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60art", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60art", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "p60art", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "p60art", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "p60art", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mate60", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mate60", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mate60pro", "issueId": "screen", "type": "range", "min": 899, "max": 1199, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60pro", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60pro", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60pro", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60pro", "issueId": "camera", "type": "range", "min": 499, "max": 749, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mate60pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mate60proplus", "issueId": "screen", "type": "range", "min": 1099, "max": 1399, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60proplus", "issueId": "battery", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60proplus", "issueId": "charging", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mate60proplus", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mate60proplus", "issueId": "camera", "type": "range", "min": 599, "max": 899, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mate60proplus", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "matex5", "issueId": "screen", "type": "range", "min": 2299, "max": 2899, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "matex5", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "matex5", "issueId": "charging", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "matex5", "issueId": "backglass", "type": "fixed", "price": 449, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "matex5", "issueId": "camera", "type": "range", "min": 599, "max": 899, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "matex5", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "pura70", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pura70", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pura70pro", "issueId": "screen", "type": "range", "min": 899, "max": 1199, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70pro", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70pro", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70pro", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70pro", "issueId": "camera", "type": "range", "min": 499, "max": 749, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pura70pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pura70ultra", "issueId": "screen", "type": "range", "min": 1199, "max": 1499, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70ultra", "issueId": "battery", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70ultra", "issueId": "charging", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pura70ultra", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pura70ultra", "issueId": "camera", "type": "range", "min": 599, "max": 899, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pura70ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "find-x6", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x6", "issueId": "battery", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x6", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x6", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x6", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "find-x6", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "find-x6pro", "issueId": "screen", "type": "range", "min": 799, "max": 1099, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x6pro", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x6pro", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x6pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x6pro", "issueId": "camera", "type": "range", "min": 449, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "find-x6pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "find-x7", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x7", "issueId": "battery", "type": "fixed", "price": 209, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x7", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x7", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x7", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "find-x7", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "find-x7ultra", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x7ultra", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x7ultra", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "find-x7ultra", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-x7ultra", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "find-x7ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "find-n3", "issueId": "screen", "type": "range", "min": 1899, "max": 2399, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "find-n3", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3", "issueId": "charging", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "find-n3", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "find-n3flip", "issueId": "screen", "type": "range", "min": 1299, "max": 1699, "warrantyDays": 90, "eta": "2-3 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "find-n3flip", "issueId": "battery", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3flip", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3flip", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "find-n3flip", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "find-n3flip", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "reno11", "issueId": "screen", "type": "range", "min": 399, "max": 549, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "reno11", "issueId": "battery", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "reno11", "issueId": "charging", "type": "fixed", "price": 119, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "reno11", "issueId": "backglass", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "reno11", "issueId": "camera", "type": "range", "min": 249, "max": 399, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "reno11", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "reno11pro", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "reno11pro", "issueId": "battery", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "reno11pro", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "reno11pro", "issueId": "backglass", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "reno11pro", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "reno11pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi13", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13", "issueId": "battery", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13", "issueId": "charging", "type": "fixed", "price": 129, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13", "issueId": "backglass", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi13", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi13pro", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13pro", "issueId": "battery", "type": "fixed", "price": 209, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13pro", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13pro", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13pro", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi13pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi13ultra", "issueId": "screen", "type": "range", "min": 899, "max": 1199, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13ultra", "issueId": "battery", "type": "fixed", "price": 239, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13ultra", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi13ultra", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi13ultra", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi13ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi14", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14", "issueId": "camera", "type": "range", "min": 349, "max": 499, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi14", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi14pro", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14pro", "issueId": "battery", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14pro", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14pro", "issueId": "camera", "type": "range", "min": 449, "max": 649, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi14pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mi14ultra", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14ultra", "issueId": "battery", "type": "fixed", "price": 259, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14ultra", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "mi14ultra", "issueId": "backglass", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mi14ultra", "issueId": "camera", "type": "range", "min": 599, "max": 899, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "mi14ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "mixfold3", "issueId": "screen", "type": "range", "min": 1999, "max": 2499, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "mixfold3", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixfold3", "issueId": "charging", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixfold3", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "mixfold3", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixfold3", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "mixflip", "issueId": "screen", "type": "range", "min": 1299, "max": 1699, "warrantyDays": 90, "eta": "2-3 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "mixflip", "issueId": "battery", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixflip", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixflip", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "mixflip", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "mixflip", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "redmik70pro", "issueId": "screen", "type": "range", "min": 399, "max": 549, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "redmik70pro", "issueId": "battery", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "redmik70pro", "issueId": "charging", "type": "fixed", "price": 109, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "redmik70pro", "issueId": "backglass", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "redmik70pro", "issueId": "camera", "type": "range", "min": 249, "max": 399, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "redmik70pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "x100", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100", "issueId": "battery", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "x100", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "x100pro", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100pro", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100pro", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100pro", "issueId": "camera", "type": "range", "min": 449, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "x100pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "x100ultra", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100ultra", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100ultra", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x100ultra", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x100ultra", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "x100ultra", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "x90pro", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x90pro", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x90pro", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "x90pro", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "x90pro", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "x90pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "xfold3", "issueId": "screen", "type": "range", "min": 1899, "max": 2399, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "xfold3", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3", "issueId": "charging", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "xfold3", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "xfold3pro", "issueId": "screen", "type": "range", "min": 2099, "max": 2599, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "xfold3pro", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3pro", "issueId": "charging", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3pro", "issueId": "backglass", "type": "fixed", "price": 449, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "xfold3pro", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xfold3pro", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "xflip", "issueId": "screen", "type": "range", "min": 1299, "max": 1699, "warrantyDays": 90, "eta": "2-3 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "xflip", "issueId": "battery", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xflip", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xflip", "issueId": "backglass", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "xflip", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "xflip", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "iqoo12", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "iqoo12", "issueId": "battery", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "iqoo12", "issueId": "charging", "type": "fixed", "price": 129, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "iqoo12", "issueId": "backglass", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "iqoo12", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "iqoo12", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "iqoo12pro", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "iqoo12pro", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "iqoo12pro", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "iqoo12pro", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "iqoo12pro", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "iqoo12pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel7", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel7", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel7", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel7", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel7", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel7", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel7pro", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel7pro", "issueId": "battery", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel7pro", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel7pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel7pro", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel7pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel8", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8", "issueId": "battery", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8", "issueId": "charging", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8", "issueId": "camera", "type": "range", "min": 349, "max": 499, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel8", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel8pro", "issueId": "screen", "type": "range", "min": 799, "max": 999, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8pro", "issueId": "battery", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8pro", "issueId": "charging", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8pro", "issueId": "backglass", "type": "fixed", "price": 279, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8pro", "issueId": "camera", "type": "range", "min": 449, "max": 649, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel8pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel8a", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8a", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8a", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel8a", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel8a", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel8a", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel9", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9", "issueId": "battery", "type": "fixed", "price": 239, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9", "issueId": "camera", "type": "range", "min": 399, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel9", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel9pro", "issueId": "screen", "type": "range", "min": 899, "max": 1099, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9pro", "issueId": "battery", "type": "fixed", "price": 269, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9pro", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9pro", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9pro", "issueId": "camera", "type": "range", "min": 499, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel9pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixel9proxl", "issueId": "screen", "type": "range", "min": 999, "max": 1199, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9proxl", "issueId": "battery", "type": "fixed", "price": 289, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9proxl", "issueId": "charging", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "pixel9proxl", "issueId": "backglass", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixel9proxl", "issueId": "camera", "type": "range", "min": 549, "max": 749, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "pixel9proxl", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "pixelfold", "issueId": "screen", "type": "range", "min": 1999, "max": 2499, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "pixelfold", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixelfold", "issueId": "charging", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixelfold", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "pixelfold", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "pixelfold", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "op11", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op11", "issueId": "battery", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op11", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op11", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op11", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "op11", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "op12", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op12", "issueId": "battery", "type": "fixed", "price": 209, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op12", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op12", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op12", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "op12", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "op12r", "issueId": "screen", "type": "range", "min": 449, "max": 649, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op12r", "issueId": "battery", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op12r", "issueId": "charging", "type": "fixed", "price": 129, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "op12r", "issueId": "backglass", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "op12r", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "op12r", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "opopen", "issueId": "screen", "type": "range", "min": 1899, "max": 2399, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "opopen", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opopen", "issueId": "charging", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opopen", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "opopen", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opopen", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "opnord3", "issueId": "screen", "type": "range", "min": 349, "max": 499, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opnord3", "issueId": "battery", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "opnord3", "issueId": "charging", "type": "fixed", "price": 109, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "opnord3", "issueId": "backglass", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opnord3", "issueId": "camera", "type": "range", "min": 249, "max": 399, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "opnord3", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "opnord4", "issueId": "screen", "type": "range", "min": 399, "max": 549, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opnord4", "issueId": "battery", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "opnord4", "issueId": "charging", "type": "fixed", "price": 119, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "opnord4", "issueId": "backglass", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "opnord4", "issueId": "camera", "type": "range", "min": 279, "max": 429, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "opnord4", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "gt5pro", "issueId": "screen", "type": "range", "min": 499, "max": 699, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt5pro", "issueId": "battery", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt5pro", "issueId": "charging", "type": "fixed", "price": 129, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt5pro", "issueId": "backglass", "type": "fixed", "price": 179, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt5pro", "issueId": "camera", "type": "range", "min": 299, "max": 449, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "gt5pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "gt5", "issueId": "screen", "type": "range", "min": 449, "max": 649, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt5", "issueId": "battery", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt5", "issueId": "charging", "type": "fixed", "price": 119, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt5", "issueId": "backglass", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt5", "issueId": "camera", "type": "range", "min": 279, "max": 429, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "gt5", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "gt3", "issueId": "screen", "type": "range", "min": 399, "max": 549, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt3", "issueId": "battery", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt3", "issueId": "charging", "type": "fixed", "price": 109, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt3", "issueId": "backglass", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt3", "issueId": "camera", "type": "range", "min": 249, "max": 399, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "gt3", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "gt-neo5", "issueId": "screen", "type": "range", "min": 399, "max": 549, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt-neo5", "issueId": "battery", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt-neo5", "issueId": "charging", "type": "fixed", "price": 109, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt-neo5", "issueId": "backglass", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt-neo5", "issueId": "camera", "type": "range", "min": 249, "max": 399, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "gt-neo5", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "gt-neo6", "issueId": "screen", "type": "range", "min": 449, "max": 599, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt-neo6", "issueId": "battery", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt-neo6", "issueId": "charging", "type": "fixed", "price": 119, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "gt-neo6", "issueId": "backglass", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "gt-neo6", "issueId": "camera", "type": "range", "min": 279, "max": 429, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "gt-neo6", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "12proplus", "issueId": "screen", "type": "range", "min": 449, "max": 599, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "12proplus", "issueId": "battery", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "12proplus", "issueId": "charging", "type": "fixed", "price": 119, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "12proplus", "issueId": "backglass", "type": "fixed", "price": 159, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "12proplus", "issueId": "camera", "type": "range", "min": 279, "max": 429, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "12proplus", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "magic6", "issueId": "screen", "type": "range", "min": 599, "max": 799, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6", "issueId": "battery", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6", "issueId": "backglass", "type": "fixed", "price": 199, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6", "issueId": "camera", "type": "range", "min": 349, "max": 549, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "magic6", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "magic6pro", "issueId": "screen", "type": "range", "min": 799, "max": 1099, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6pro", "issueId": "battery", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6pro", "issueId": "charging", "type": "fixed", "price": 169, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6pro", "issueId": "backglass", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6pro", "issueId": "camera", "type": "range", "min": 449, "max": 699, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "magic6pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "magic6ultimate", "issueId": "screen", "type": "range", "min": 999, "max": 1299, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6ultimate", "issueId": "battery", "type": "fixed", "price": 259, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6ultimate", "issueId": "charging", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic6ultimate", "issueId": "backglass", "type": "fixed", "price": 299, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic6ultimate", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "magic6ultimate", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "magic5pro", "issueId": "screen", "type": "range", "min": 699, "max": 899, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic5pro", "issueId": "battery", "type": "fixed", "price": 209, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic5pro", "issueId": "charging", "type": "fixed", "price": 149, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "magic5pro", "issueId": "backglass", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magic5pro", "issueId": "camera", "type": "range", "min": 399, "max": 599, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "magic5pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." },
-
-    { "modelId": "magicv2", "issueId": "screen", "type": "range", "min": 1899, "max": 2399, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "magicv2", "issueId": "battery", "type": "fixed", "price": 329, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv2", "issueId": "charging", "type": "fixed", "price": 229, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv2", "issueId": "backglass", "type": "fixed", "price": 399, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "magicv2", "issueId": "camera", "type": "range", "min": 499, "max": 799, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv2", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "magicv3", "issueId": "screen", "type": "range", "min": 2099, "max": 2599, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "magicv3", "issueId": "battery", "type": "fixed", "price": 349, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv3", "issueId": "charging", "type": "fixed", "price": 249, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv3", "issueId": "backglass", "type": "fixed", "price": 449, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "magicv3", "issueId": "camera", "type": "range", "min": 549, "max": 849, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicv3", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "magicvs2", "issueId": "screen", "type": "range", "min": 1799, "max": 2299, "warrantyDays": 90, "eta": "2-4 hours", "notes": "Inner/outer screen price differs." },
-    { "modelId": "magicvs2", "issueId": "battery", "type": "fixed", "price": 319, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicvs2", "issueId": "charging", "type": "fixed", "price": 219, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicvs2", "issueId": "backglass", "type": "fixed", "price": 379, "warrantyDays": 30, "eta": "2-3 hours", "notes": "" },
-    { "modelId": "magicvs2", "issueId": "camera", "type": "range", "min": 479, "max": 749, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "magicvs2", "issueId": "diagnosis", "type": "fixed", "price": 50, "warrantyDays": 0, "eta": "30-60 min", "notes": "Foldable diagnosis fee." },
-
-    { "modelId": "honor200pro", "issueId": "screen", "type": "range", "min": 549, "max": 749, "warrantyDays": 90, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "honor200pro", "issueId": "battery", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "honor200pro", "issueId": "charging", "type": "fixed", "price": 139, "warrantyDays": 30, "eta": "45-60 min", "notes": "" },
-    { "modelId": "honor200pro", "issueId": "backglass", "type": "fixed", "price": 189, "warrantyDays": 30, "eta": "1-2 hours", "notes": "" },
-    { "modelId": "honor200pro", "issueId": "camera", "type": "range", "min": 329, "max": 499, "warrantyDays": 30, "eta": "45-90 min", "notes": "" },
-    { "modelId": "honor200pro", "issueId": "diagnosis", "type": "fixed", "price": 0, "warrantyDays": 0, "eta": "30-60 min", "notes": "Free basic diagnosis." }
+    {
+      "modelId": "ip11",
+      "issueId": "screen",
+      "type": "range",
+      "min": 299,
+      "max": 399,
+      "warrantyDays": 90,
+      "eta": "30-60 min",
+      "notes": "Depends on screen quality."
+    },
+    {
+      "modelId": "ip11",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": "Battery brand may vary."
+    },
+    {
+      "modelId": "ip11",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip11",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip11",
+      "issueId": "camera",
+      "type": "range",
+      "min": 199,
+      "max": 299,
+      "warrantyDays": 30,
+      "eta": "30-60 min",
+      "notes": "Depends on camera module."
+    },
+    {
+      "modelId": "ip11",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 499,
+      "warrantyDays": 90,
+      "eta": "45-90 min",
+      "notes": "True Tone depends on condition."
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 349,
+      "warrantyDays": 30,
+      "eta": "30-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip12",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 599,
+      "warrantyDays": 90,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "30-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip13",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "screen",
+      "type": "range",
+      "min": 899,
+      "max": 1199,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "backglass",
+      "type": "from",
+      "from": 499,
+      "warrantyDays": 30,
+      "eta": "2-4 hours",
+      "notes": "Frame condition may affect."
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip14pm",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 269,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": "Possible sub-board/mainboard issue."
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "backglass",
+      "type": "from",
+      "from": 499,
+      "warrantyDays": 30,
+      "eta": "2-4 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1299,
+      "max": 1599,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": "Original or OEM quality available."
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "backglass",
+      "type": "from",
+      "from": 599,
+      "warrantyDays": 30,
+      "eta": "2-4 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "camera",
+      "type": "range",
+      "min": 599,
+      "max": 899,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip15promax",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 289,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 449,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1199,
+      "max": 1499,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "backglass",
+      "type": "from",
+      "from": 549,
+      "warrantyDays": 30,
+      "eta": "2-4 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1499,
+      "max": 1899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "30-45 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "charging",
+      "type": "tbd",
+      "warrantyDays": 0,
+      "eta": "Need inspection",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "backglass",
+      "type": "from",
+      "from": 649,
+      "warrantyDays": 30,
+      "eta": "2-4 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "camera",
+      "type": "range",
+      "min": 649,
+      "max": 999,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "ip16promax",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s23",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 499,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23plus",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s23ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s24",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 499,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 239,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24plus",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1099,
+      "max": 1399,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 269,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "s24ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1999,
+      "max": 2499,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold5",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1299,
+      "max": 1699,
+      "warrantyDays": 90,
+      "eta": "2-3 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip5",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "screen",
+      "type": "range",
+      "min": 2199,
+      "max": 2699,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 369,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 269,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 449,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zfold6",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1399,
+      "max": 1799,
+      "warrantyDays": 90,
+      "eta": "2-3 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 319,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 379,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 649,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "zflip6",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "p60",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "p60art",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 899,
+      "max": 1199,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 749,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1099,
+      "max": 1399,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "camera",
+      "type": "range",
+      "min": 599,
+      "max": 899,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mate60proplus",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "screen",
+      "type": "range",
+      "min": 2299,
+      "max": 2899,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 449,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "camera",
+      "type": "range",
+      "min": 599,
+      "max": 899,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "matex5",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 899,
+      "max": 1199,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 749,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1199,
+      "max": 1499,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 599,
+      "max": 899,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pura70ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 1099,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x6pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 209,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "find-x7ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1899,
+      "max": 2399,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1299,
+      "max": 1699,
+      "warrantyDays": 90,
+      "eta": "2-3 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "find-n3flip",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 119,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "reno11pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 129,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 209,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 899,
+      "max": 1199,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 239,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi13ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 499,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 649,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 259,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 599,
+      "max": 899,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "mi14ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1999,
+      "max": 2499,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixfold3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1299,
+      "max": 1699,
+      "warrantyDays": 90,
+      "eta": "2-3 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "mixflip",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 109,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "redmik70pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "x100",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x100ultra",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "x90pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1899,
+      "max": 2399,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 2099,
+      "max": 2599,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 449,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xfold3pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1299,
+      "max": 1699,
+      "warrantyDays": 90,
+      "eta": "2-3 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "xflip",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 129,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "iqoo12pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel7pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 499,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 999,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 279,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 649,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel8a",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 239,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 899,
+      "max": 1099,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 269,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1199,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 289,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 749,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "pixel9proxl",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1999,
+      "max": 2499,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "pixelfold",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "op11",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op11",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op11",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op11",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op11",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op11",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "op12",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op12",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 209,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op12",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "screen",
+      "type": "range",
+      "min": 449,
+      "max": 649,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 129,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "op12r",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1899,
+      "max": 2399,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opopen",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 349,
+      "max": 499,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 109,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 119,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "camera",
+      "type": "range",
+      "min": 279,
+      "max": 429,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "opnord4",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 499,
+      "max": 699,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 129,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 179,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 299,
+      "max": 449,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "screen",
+      "type": "range",
+      "min": 449,
+      "max": 649,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 119,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "camera",
+      "type": "range",
+      "min": 279,
+      "max": 429,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt5",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 109,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "screen",
+      "type": "range",
+      "min": 399,
+      "max": 549,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 109,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "camera",
+      "type": "range",
+      "min": 249,
+      "max": 399,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo5",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "screen",
+      "type": "range",
+      "min": 449,
+      "max": 599,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 119,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "camera",
+      "type": "range",
+      "min": 279,
+      "max": 429,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "gt-neo6",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "screen",
+      "type": "range",
+      "min": 449,
+      "max": 599,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 119,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 159,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "camera",
+      "type": "range",
+      "min": 279,
+      "max": 429,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "12proplus",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "screen",
+      "type": "range",
+      "min": 599,
+      "max": 799,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 199,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "camera",
+      "type": "range",
+      "min": 349,
+      "max": 549,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 799,
+      "max": 1099,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 169,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 449,
+      "max": 699,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "screen",
+      "type": "range",
+      "min": 999,
+      "max": 1299,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 259,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 299,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic6ultimate",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 699,
+      "max": 899,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 209,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 149,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 399,
+      "max": 599,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "magic5pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1899,
+      "max": 2399,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 329,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 229,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 399,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "camera",
+      "type": "range",
+      "min": 499,
+      "max": 799,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv2",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "screen",
+      "type": "range",
+      "min": 2099,
+      "max": 2599,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 349,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 249,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 449,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "camera",
+      "type": "range",
+      "min": 549,
+      "max": 849,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicv3",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "screen",
+      "type": "range",
+      "min": 1799,
+      "max": 2299,
+      "warrantyDays": 90,
+      "eta": "2-4 hours",
+      "notes": "Inner/outer screen price differs."
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 319,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 219,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 379,
+      "warrantyDays": 30,
+      "eta": "2-3 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "camera",
+      "type": "range",
+      "min": 479,
+      "max": 749,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "magicvs2",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 50,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Foldable diagnosis fee."
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "screen",
+      "type": "range",
+      "min": 549,
+      "max": 749,
+      "warrantyDays": 90,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "battery",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "charging",
+      "type": "fixed",
+      "price": 139,
+      "warrantyDays": 30,
+      "eta": "45-60 min",
+      "notes": ""
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "backglass",
+      "type": "fixed",
+      "price": 189,
+      "warrantyDays": 30,
+      "eta": "1-2 hours",
+      "notes": ""
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "camera",
+      "type": "range",
+      "min": 329,
+      "max": 499,
+      "warrantyDays": 30,
+      "eta": "45-90 min",
+      "notes": ""
+    },
+    {
+      "modelId": "honor200pro",
+      "issueId": "diagnosis",
+      "type": "fixed",
+      "price": 0,
+      "warrantyDays": 0,
+      "eta": "30-60 min",
+      "notes": "Free basic diagnosis."
+    }
   ]
 }

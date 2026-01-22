@@ -5,6 +5,10 @@ import priceDataJson from '@/data/iphone-prices.json';
 const PRICE_DATA_KEY = 'spr:price-data';
 const PRICE_DATA_TTL = 365 * 24 * 60 * 60 * 1000; // 1 year in ms (effectively permanent)
 
+// Check if Redis is configured
+const hasRedis = () =>
+  !!process.env.UPSTASH_REDIS_REST_URL && !!process.env.UPSTASH_REDIS_REST_TOKEN;
+
 export interface Brand {
   id: string;
   name: string;
@@ -55,9 +59,25 @@ export async function getPriceData(): Promise<PriceData> {
   return priceDataJson as PriceData;
 }
 
-// Save entire price data object to Redis
-export async function savePriceData(data: PriceData): Promise<void> {
+// Save entire price data object to Redis and optionally to JSON file
+export async function savePriceData(data: PriceData, writeToFile = false): Promise<void> {
   await kvSet(PRICE_DATA_KEY, data, PRICE_DATA_TTL);
+
+  // Write to JSON file if requested (only works on server-side)
+  if (writeToFile && !hasRedis() && typeof window === 'undefined') {
+    try {
+      // Use require to avoid webpack bundling for client
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const fs = require('fs');
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const path = require('path');
+      const filePath = path.join(process.cwd(), 'src/data/iphone-prices.json');
+      fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+      console.log('[Storage] Data saved to JSON file');
+    } catch (err) {
+      console.error('[Storage] Failed to write to JSON file:', err);
+    }
+  }
 }
 
 // Seed Redis with initial data from JSON (if not already seeded)
@@ -77,7 +97,7 @@ export async function addModel(model: Model): Promise<PriceData> {
     throw new Error(`Model with id "${model.id}" already exists`);
   }
   data.models.push(model);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -101,7 +121,7 @@ export async function updateModel(id: string, updates: Partial<Model>): Promise<
   }
 
   data.models[index] = { ...data.models[index], ...updates };
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -115,7 +135,7 @@ export async function deleteModel(id: string): Promise<PriceData> {
   // Remove all prices associated with this model
   data.prices = data.prices.filter(p => p.modelId !== id);
   data.models.splice(index, 1);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -126,7 +146,7 @@ export async function addIssue(issue: Issue): Promise<PriceData> {
     throw new Error(`Issue with id "${issue.id}" already exists`);
   }
   data.issues.push(issue);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -150,7 +170,7 @@ export async function updateIssue(id: string, updates: Partial<Issue>): Promise<
   }
 
   data.issues[index] = { ...data.issues[index], ...updates };
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -164,7 +184,7 @@ export async function deleteIssue(id: string): Promise<PriceData> {
   // Remove all prices associated with this issue
   data.prices = data.prices.filter(p => p.issueId !== id);
   data.issues.splice(index, 1);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -188,7 +208,7 @@ export async function addPrice(price: Price): Promise<PriceData> {
   }
 
   data.prices.push(price);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -204,7 +224,7 @@ export async function updatePrice(modelId: string, issueId: string, updates: Par
   const { modelId: _modelId, issueId: _issueId, ...safeUpdates } = updates;
 
   data.prices[index] = { ...data.prices[index], ...safeUpdates };
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -216,7 +236,7 @@ export async function deletePrice(modelId: string, issueId: string): Promise<Pri
   }
 
   data.prices.splice(index, 1);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }
 
@@ -224,6 +244,6 @@ export async function deletePrice(modelId: string, issueId: string): Promise<Pri
 export async function updateMetadata(updates: Partial<Pick<PriceData, 'brand' | 'currency' | 'whatsappNumber' | 'disclaimer'>>): Promise<PriceData> {
   const data = await getPriceData();
   Object.assign(data, updates);
-  await savePriceData(data);
+  await savePriceData(data, true);
   return data;
 }

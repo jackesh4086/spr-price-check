@@ -19,10 +19,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate id format (alphanumeric with optional hyphens/underscores)
-    if (!/^[a-zA-Z0-9_-]+$/.test(id)) {
+    // Validate id format (alphanumeric with optional hyphens/underscores/spaces)
+    if (!/^[a-zA-Z0-9_\- ]+$/.test(id)) {
       return NextResponse.json(
-        { error: 'Model id can only contain letters, numbers, hyphens, and underscores' },
+        { error: 'Model id can only contain letters, numbers, hyphens, underscores, and spaces' },
         { status: 400 }
       );
     }

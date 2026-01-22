@@ -22,9 +22,9 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
     if (brand) updates.brand = brand;
     if (newId) {
       // Validate new id format
-      if (!/^[a-zA-Z0-9_-]+$/.test(newId)) {
+      if (!/^[a-zA-Z0-9_\- ]+$/.test(newId)) {
         return NextResponse.json(
-          { error: 'Model id can only contain letters, numbers, hyphens, and underscores' },
+          { error: 'Model id can only contain letters, numbers, hyphens, underscores, and spaces' },
           { status: 400 }
         );
       }
