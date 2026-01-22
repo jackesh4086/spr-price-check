@@ -226,11 +226,61 @@ export default function PricesManager() {
     }
   }
 
+  const [expandedBrands, setExpandedBrands] = useState<Set<string>>(new Set());
+  const [filterBrand, setFilterBrand] = useState('');
+
   const filteredPrices = data?.prices.filter((p) => {
     if (filterModel && p.modelId !== filterModel) return false;
     if (filterIssue && p.issueId !== filterIssue) return false;
+    if (filterBrand) {
+      const model = data?.models.find((m) => m.id === p.modelId);
+      if (model?.brand !== filterBrand) return false;
+    }
     return true;
   }) || [];
+
+  // Group prices by brand
+  const pricesByBrand = filteredPrices.reduce((acc, price) => {
+    const model = data?.models.find((m) => m.id === price.modelId);
+    const brandId = model?.brand || 'unknown';
+    if (!acc[brandId]) {
+      acc[brandId] = [];
+    }
+    acc[brandId].push(price);
+    return acc;
+  }, {} as Record<string, Price[]>);
+
+  // Sort prices within each brand by model name then issue
+  Object.keys(pricesByBrand).forEach((brandId) => {
+    pricesByBrand[brandId].sort((a, b) => {
+      const modelA = data?.models.find((m) => m.id === a.modelId)?.name || '';
+      const modelB = data?.models.find((m) => m.id === b.modelId)?.name || '';
+      if (modelA !== modelB) return modelA.localeCompare(modelB);
+      return a.issueId.localeCompare(b.issueId);
+    });
+  });
+
+  const toggleBrand = (brandId: string) => {
+    setExpandedBrands((prev) => {
+      const next = new Set(prev);
+      if (next.has(brandId)) {
+        next.delete(brandId);
+      } else {
+        next.add(brandId);
+      }
+      return next;
+    });
+  };
+
+  const expandAll = () => {
+    if (data?.brands) {
+      setExpandedBrands(new Set(data.brands.map((b) => b.id)));
+    }
+  };
+
+  const collapseAll = () => {
+    setExpandedBrands(new Set());
+  };
 
   if (loading) {
     return (
@@ -279,16 +329,31 @@ export default function PricesManager() {
         )}
 
         {/* Filters */}
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-wrap gap-4 mb-6">
+          <select
+            value={filterBrand}
+            onChange={(e) => {
+              setFilterBrand(e.target.value);
+              setFilterModel('');
+            }}
+            className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none"
+          >
+            <option value="">All Brands</option>
+            {data?.brands.map((b) => (
+              <option key={b.id} value={b.id}>{b.name}</option>
+            ))}
+          </select>
           <select
             value={filterModel}
             onChange={(e) => setFilterModel(e.target.value)}
             className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none"
           >
             <option value="">All Models</option>
-            {data?.models.map((m) => (
-              <option key={m.id} value={m.id}>{m.name}</option>
-            ))}
+            {data?.models
+              .filter((m) => !filterBrand || m.brand === filterBrand)
+              .map((m) => (
+                <option key={m.id} value={m.id}>{m.name}</option>
+              ))}
           </select>
           <select
             value={filterIssue}
@@ -300,6 +365,20 @@ export default function PricesManager() {
               <option key={i.id} value={i.id}>{i.name}</option>
             ))}
           </select>
+          <div className="flex gap-2">
+            <button
+              onClick={expandAll}
+              className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50"
+            >
+              Expand All
+            </button>
+            <button
+              onClick={collapseAll}
+              className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50"
+            >
+              Collapse All
+            </button>
+          </div>
           {isLoggedIn && !showAdd && !editingKey && (
             <button
               onClick={() => setShowAdd(true)}
@@ -478,98 +557,130 @@ export default function PricesManager() {
           </div>
         )}
 
-        {/* Prices List */}
-        <div className="bg-white rounded-lg shadow overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">Model</th>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">Issue</th>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">Type</th>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">Price</th>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">Warranty</th>
-                  <th className="px-4 py-3 text-left font-medium text-gray-600">ETA</th>
-                  {isLoggedIn && (
-                    <th className="px-4 py-3 text-right font-medium text-gray-600">Actions</th>
-                  )}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {filteredPrices.map((price) => {
-                  const key = `${price.modelId}:${price.issueId}`;
-                  const model = data?.models.find((m) => m.id === price.modelId);
-                  const issue = data?.issues.find((i) => i.id === price.issueId);
+        {/* Prices List - Grouped by Brand */}
+        <div className="space-y-4">
+          {filteredPrices.length === 0 ? (
+            <div className="bg-white rounded-lg shadow p-8 text-center text-gray-500">
+              {data?.prices.length === 0
+                ? 'No prices found.'
+                : 'No prices match the current filters.'}
+            </div>
+          ) : (
+            data?.brands
+              .filter((brand) => pricesByBrand[brand.id]?.length > 0)
+              .map((brand) => {
+                const brandPrices = pricesByBrand[brand.id] || [];
+                const isExpanded = expandedBrands.has(brand.id);
 
-                  return (
-                    <tr key={key} className="hover:bg-gray-50">
-                      <td className="px-4 py-3 font-medium text-gray-900">{model?.name || price.modelId}</td>
-                      <td className="px-4 py-3 text-gray-600">{issue?.name || price.issueId}</td>
-                      <td className="px-4 py-3">
-                        <span className={`inline-block px-2 py-1 rounded text-xs font-medium ${
-                          price.type === 'fixed' ? 'bg-green-100 text-green-700' :
-                          price.type === 'range' ? 'bg-blue-100 text-blue-700' :
-                          price.type === 'from' ? 'bg-purple-100 text-purple-700' :
-                          'bg-gray-100 text-gray-700'
-                        }`}>
-                          {price.type}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 font-medium text-gray-900">{formatPrice(price, data?.currency || 'MYR')}</td>
-                      <td className="px-4 py-3 text-gray-600">{price.warrantyDays} days</td>
-                      <td className="px-4 py-3 text-gray-600">{price.eta || '-'}</td>
-                      {isLoggedIn && (
-                        <td className="px-4 py-3 text-right">
-                          {deleteConfirm === key ? (
-                            <div className="flex items-center justify-end gap-2">
-                              <span className="text-sm text-red-600">Delete?</span>
-                              <button
-                                onClick={() => handleDelete(price.modelId, price.issueId)}
-                                disabled={submitting}
-                                className="text-red-600 hover:text-red-700 font-medium text-sm"
-                              >
-                                Yes
-                              </button>
-                              <button
-                                onClick={() => setDeleteConfirm(null)}
-                                className="text-gray-500 hover:text-gray-700 text-sm"
-                              >
-                                No
-                              </button>
-                            </div>
-                          ) : (
-                            <div className="flex items-center justify-end gap-3">
-                              <button
-                                onClick={() => startEdit(price)}
-                                className="text-amber-600 hover:text-amber-700 text-sm font-medium"
-                              >
-                                Edit
-                              </button>
-                              <button
-                                onClick={() => setDeleteConfirm(key)}
-                                className="text-red-600 hover:text-red-700 text-sm font-medium"
-                              >
-                                Delete
-                              </button>
-                            </div>
-                          )}
-                        </td>
-                      )}
-                    </tr>
-                  );
-                })}
-                {filteredPrices.length === 0 && (
-                  <tr>
-                    <td colSpan={isLoggedIn ? 7 : 6} className="px-4 py-8 text-center text-gray-500">
-                      {data?.prices.length === 0
-                        ? 'No prices found.'
-                        : 'No prices match the current filters.'}
-                    </td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
+                return (
+                  <div key={brand.id} className="bg-white rounded-lg shadow overflow-hidden">
+                    {/* Brand Header */}
+                    <button
+                      onClick={() => toggleBrand(brand.id)}
+                      className="w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
+                    >
+                      <div className="flex items-center gap-3">
+                        <svg
+                          className={`w-5 h-5 text-gray-500 transition-transform ${isExpanded ? 'rotate-90' : ''}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                        <span className="font-semibold text-gray-900">{brand.name}</span>
+                        <span className="text-sm text-gray-500">({brandPrices.length} prices)</span>
+                      </div>
+                    </button>
+
+                    {/* Brand Prices Table */}
+                    {isExpanded && (
+                      <div className="overflow-x-auto">
+                        <table className="w-full text-sm">
+                          <thead className="bg-gray-50 border-t">
+                            <tr>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">Model</th>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">Issue</th>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">Type</th>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">Price</th>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">Warranty</th>
+                              <th className="px-4 py-2 text-left font-medium text-gray-600">ETA</th>
+                              {isLoggedIn && (
+                                <th className="px-4 py-2 text-right font-medium text-gray-600">Actions</th>
+                              )}
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-gray-100">
+                            {brandPrices.map((price) => {
+                              const key = `${price.modelId}:${price.issueId}`;
+                              const model = data?.models.find((m) => m.id === price.modelId);
+                              const issue = data?.issues.find((i) => i.id === price.issueId);
+
+                              return (
+                                <tr key={key} className="hover:bg-gray-50">
+                                  <td className="px-4 py-2 font-medium text-gray-900">{model?.name || price.modelId}</td>
+                                  <td className="px-4 py-2 text-gray-600">{issue?.name || price.issueId}</td>
+                                  <td className="px-4 py-2">
+                                    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
+                                      price.type === 'fixed' ? 'bg-green-100 text-green-700' :
+                                      price.type === 'range' ? 'bg-blue-100 text-blue-700' :
+                                      price.type === 'from' ? 'bg-purple-100 text-purple-700' :
+                                      'bg-gray-100 text-gray-700'
+                                    }`}>
+                                      {price.type}
+                                    </span>
+                                  </td>
+                                  <td className="px-4 py-2 font-medium text-gray-900">{formatPrice(price, data?.currency || 'MYR')}</td>
+                                  <td className="px-4 py-2 text-gray-600">{price.warrantyDays}d</td>
+                                  <td className="px-4 py-2 text-gray-600">{price.eta || '-'}</td>
+                                  {isLoggedIn && (
+                                    <td className="px-4 py-2 text-right">
+                                      {deleteConfirm === key ? (
+                                        <div className="flex items-center justify-end gap-2">
+                                          <span className="text-xs text-red-600">Delete?</span>
+                                          <button
+                                            onClick={() => handleDelete(price.modelId, price.issueId)}
+                                            disabled={submitting}
+                                            className="text-red-600 hover:text-red-700 font-medium text-xs"
+                                          >
+                                            Yes
+                                          </button>
+                                          <button
+                                            onClick={() => setDeleteConfirm(null)}
+                                            className="text-gray-500 hover:text-gray-700 text-xs"
+                                          >
+                                            No
+                                          </button>
+                                        </div>
+                                      ) : (
+                                        <div className="flex items-center justify-end gap-2">
+                                          <button
+                                            onClick={() => startEdit(price)}
+                                            className="text-amber-600 hover:text-amber-700 text-xs font-medium"
+                                          >
+                                            Edit
+                                          </button>
+                                          <button
+                                            onClick={() => setDeleteConfirm(key)}
+                                            className="text-red-600 hover:text-red-700 text-xs font-medium"
+                                          >
+                                            Delete
+                                          </button>
+                                        </div>
+                                      )}
+                                    </td>
+                                  )}
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
+                );
+              })
+          )}
         </div>
       </div>
     </div>

@@ -10,11 +10,11 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const { id, name } = body;
+    const { id, name, brand } = body;
 
-    if (!id || !name) {
+    if (!id || !name || !brand) {
       return NextResponse.json(
-        { error: 'Model id and name are required' },
+        { error: 'Model id, name, and brand are required' },
         { status: 400 }
       );
     }
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const data = await addModel({ id, name });
+    const data = await addModel({ id, name, brand });
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error('Add model error:', error);

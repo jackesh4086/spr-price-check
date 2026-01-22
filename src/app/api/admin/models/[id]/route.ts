@@ -15,10 +15,11 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = await params;
     const body = await request.json();
-    const { name, newId } = body;
+    const { name, newId, brand } = body;
 
-    const updates: { id?: string; name?: string } = {};
+    const updates: { id?: string; name?: string; brand?: string } = {};
     if (name) updates.name = name;
+    if (brand) updates.brand = brand;
     if (newId) {
       // Validate new id format
       if (!/^[a-zA-Z0-9_-]+$/.test(newId)) {
