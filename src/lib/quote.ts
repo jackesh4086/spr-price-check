@@ -235,12 +235,16 @@ export async function getBrandsAsync() {
 
 export function getModelsByBrand(brandId: string) {
   const priceData = cachedData || (priceDataJson as PriceData);
-  return priceData.models.filter((m) => m.brand === brandId);
+  return priceData.models
+    .filter((m) => m.brand === brandId)
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export async function getModelsByBrandAsync(brandId: string) {
   const priceData = await loadPriceData();
-  return priceData.models.filter((m) => m.brand === brandId);
+  return priceData.models
+    .filter((m) => m.brand === brandId)
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function validateBrandId(brandId: string): boolean {

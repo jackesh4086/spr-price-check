@@ -59,7 +59,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
-      <h1 className="text-xl font-medium text-gray-800 mb-8">{storeBrand.toLowerCase()} price check</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-8">SPR Price Check</h1>
 
       <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
         <select
