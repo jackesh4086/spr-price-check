@@ -3,7 +3,7 @@ import { genOtp, hashOtp } from "@/lib/otp";
 import { kvSet } from "@/lib/store";
 import { enforceCooldown, incrementWithTtl } from "@/lib/rateLimit";
 import { normalizeMsisdn, isValidMsisdn } from "@/lib/sanitize";
-import { validateModelId, validateIssueId } from "@/lib/quote";
+import { validateModelIdAsync, validateIssueIdAsync } from "@/lib/quote";
 import { sendWhatsAppOTP } from "@/lib/wa";
 
 export const dynamic = "force-dynamic";
@@ -17,7 +17,8 @@ export async function POST(req: Request) {
     const issueId = String(body.issueId || "");
 
     if (!isValidMsisdn(phone)) return NextResponse.json({ ok: false, error: "Invalid phone number" }, { status: 400 });
-    if (!validateModelId(modelId) || !validateIssueId(issueId)) return NextResponse.json({ ok: false, error: "Invalid selection" }, { status: 400 });
+    const [validModel, validIssue] = await Promise.all([validateModelIdAsync(modelId), validateIssueIdAsync(issueId)]);
+    if (!validModel || !validIssue) return NextResponse.json({ ok: false, error: "Invalid selection" }, { status: 400 });
 
     // IP rate limit: max 30 requests / hour
     const ipCount = await incrementWithTtl(`rl:ip:${ip}`, 60 * 60 * 1000);
@@ -31,13 +32,16 @@ export async function POST(req: Request) {
     const hashed = hashOtp(code);
 
     // store OTP record (5 minutes)
+    const now = Date.now();
     await kvSet(`otp:${phone}`, {
-      hashed,
+      hashedCode: hashed,
+      phone,
       modelId,
       issueId,
+      expiresAt: now + 5 * 60 * 1000,
       attempts: 0,
-      lockedUntil: 0,
-      createdAt: Date.now()
+      lockedUntil: null,
+      lastSentAt: now
     }, 5 * 60 * 1000);
 
     await sendWhatsAppOTP(phone, code);

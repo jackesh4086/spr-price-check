@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { verifyQuoteToken } from "@/lib/token";
-import { getQuote, formatPrice } from "@/lib/quote";
+import { getQuoteAsync } from "@/lib/quote";
 
 export const dynamic = "force-dynamic";
 
@@ -10,27 +10,27 @@ export async function GET(req: Request) {
 
   const result = await verifyQuoteToken(token);
   if (!result.valid || !result.payload) {
-    return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   const payload = result.payload;
-  const quote = getQuote(payload.modelId, payload.issueId);
+  const quote = await getQuoteAsync(payload.modelId, payload.issueId);
 
   if (!quote) {
-    return NextResponse.json({ ok: false, error: "Invalid token payload" }, { status: 400 });
+    return NextResponse.json({ error: "Invalid token payload" }, { status: 400 });
   }
 
-  const displayPrice = formatPrice(quote.pricing, quote.currency);
-
   return NextResponse.json({
-    ok: true,
-    brand: quote.brand,
-    currency: quote.currency,
-    disclaimer: quote.disclaimer,
-    model: quote.model,
-    issue: quote.issue,
-    pricing: quote.pricing,
-    displayPrice,
-    phone: payload.phone,
+    quote: {
+      brand: quote.brand,
+      currency: quote.currency,
+      disclaimer: quote.disclaimer,
+      whatsappNumber: quote.whatsappNumber,
+      model: quote.model,
+      issue: quote.issue,
+      pricing: quote.pricing,
+      phone: payload.phone,
+      validUntil: new Date(payload.exp * 1000).toISOString(),
+    },
   });
 }
