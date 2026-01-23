@@ -102,13 +102,13 @@
       "brand": "samsung"
     },
     {
-      "id": "s23plus",
-      "name": "Galaxy S23+",
+      "id": "s23ultra",
+      "name": "Galaxy S23 Ultra",
       "brand": "samsung"
     },
     {
-      "id": "s23ultra",
-      "name": "Galaxy S23 Ultra",
+      "id": "s23plus",
+      "name": "Galaxy S23+",
       "brand": "samsung"
     },
     {
@@ -117,18 +117,18 @@
       "brand": "samsung"
     },
     {
-      "id": "s24plus",
-      "name": "Galaxy S24+",
-      "brand": "samsung"
-    },
-    {
       "id": "s24ultra",
       "name": "Galaxy S24 Ultra",
       "brand": "samsung"
     },
     {
-      "id": "zfold5",
-      "name": "Galaxy Z Fold 5",
+      "id": "s24plus",
+      "name": "Galaxy S24+",
+      "brand": "samsung"
+    },
+    {
+      "id": "s25ultra",
+      "name": "Galaxy S25 Ultra",
       "brand": "samsung"
     },
     {
@@ -137,29 +137,19 @@
       "brand": "samsung"
     },
     {
-      "id": "zfold6",
-      "name": "Galaxy Z Fold 6",
-      "brand": "samsung"
-    },
-    {
       "id": "zflip6",
       "name": "Galaxy Z Flip 6",
       "brand": "samsung"
     },
     {
-      "id": "p60",
-      "name": "P60",
-      "brand": "huawei"
+      "id": "zfold5",
+      "name": "Galaxy Z Fold 5",
+      "brand": "samsung"
     },
     {
-      "id": "p60pro",
-      "name": "P60 Pro",
-      "brand": "huawei"
-    },
-    {
-      "id": "p60art",
-      "name": "P60 Art",
-      "brand": "huawei"
+      "id": "zfold6",
+      "name": "Galaxy Z Fold 6",
+      "brand": "samsung"
     },
     {
       "id": "mate60",
@@ -197,6 +187,31 @@
       "brand": "huawei"
     },
     {
+      "id": "p60",
+      "name": "P60",
+      "brand": "huawei"
+    },
+    {
+      "id": "p60pro",
+      "name": "P60 Pro",
+      "brand": "huawei"
+    },
+    {
+      "id": "p60art",
+      "name": "P60 Art",
+      "brand": "huawei"
+    },
+    {
+      "id": "find-n3",
+      "name": "Find N3",
+      "brand": "oppo"
+    },
+    {
+      "id": "find-n3flip",
+      "name": "Find N3 Flip",
+      "brand": "oppo"
+    },
+    {
       "id": "find-x6",
       "name": "Find X6",
       "brand": "oppo"
@@ -217,16 +232,6 @@
       "brand": "oppo"
     },
     {
-      "id": "find-n3",
-      "name": "Find N3",
-      "brand": "oppo"
-    },
-    {
-      "id": "find-n3flip",
-      "name": "Find N3 Flip",
-      "brand": "oppo"
-    },
-    {
       "id": "reno11",
       "name": "Reno 11",
       "brand": "oppo"
@@ -235,6 +240,21 @@
       "id": "reno11pro",
       "name": "Reno 11 Pro",
       "brand": "oppo"
+    },
+    {
+      "id": "mixflip",
+      "name": "MIX Flip",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "mixfold3",
+      "name": "MIX Fold 3",
+      "brand": "xiaomi"
+    },
+    {
+      "id": "redmik70pro",
+      "name": "Redmi K70 Pro",
+      "brand": "xiaomi"
     },
     {
       "id": "mi13",
@@ -267,19 +287,34 @@
       "brand": "xiaomi"
     },
     {
-      "id": "mixfold3",
-      "name": "MIX Fold 3",
-      "brand": "xiaomi"
+      "id": "iqoo12",
+      "name": "iQOO 12",
+      "brand": "vivo"
     },
     {
-      "id": "mixflip",
-      "name": "MIX Flip",
-      "brand": "xiaomi"
+      "id": "iqoo12pro",
+      "name": "iQOO 12 Pro",
+      "brand": "vivo"
     },
     {
-      "id": "redmik70pro",
-      "name": "Redmi K70 Pro",
-      "brand": "xiaomi"
+      "id": "xflip",
+      "name": "X Flip",
+      "brand": "vivo"
+    },
+    {
+      "id": "xfold3",
+      "name": "X Fold 3",
+      "brand": "vivo"
+    },
+    {
+      "id": "xfold3pro",
+      "name": "X Fold 3 Pro",
+      "brand": "vivo"
+    },
+    {
+      "id": "x90pro",
+      "name": "X90 Pro",
+      "brand": "vivo"
     },
     {
       "id": "x100",
@@ -294,36 +329,6 @@
     {
       "id": "x100ultra",
       "name": "X100 Ultra",
-      "brand": "vivo"
-    },
-    {
-      "id": "x90pro",
-      "name": "X90 Pro",
-      "brand": "vivo"
-    },
-    {
-      "id": "xfold3",
-      "name": "X Fold 3",
-      "brand": "vivo"
-    },
-    {
-      "id": "xfold3pro",
-      "name": "X Fold 3 Pro",
-      "brand": "vivo"
-    },
-    {
-      "id": "xflip",
-      "name": "X Flip",
-      "brand": "vivo"
-    },
-    {
-      "id": "iqoo12",
-      "name": "iQOO 12",
-      "brand": "vivo"
-    },
-    {
-      "id": "iqoo12pro",
-      "name": "iQOO 12 Pro",
       "brand": "vivo"
     },
     {
@@ -387,11 +392,6 @@
       "brand": "oneplus"
     },
     {
-      "id": "opopen",
-      "name": "OnePlus Open",
-      "brand": "oneplus"
-    },
-    {
       "id": "opnord3",
       "name": "OnePlus Nord 3",
       "brand": "oneplus"
@@ -402,8 +402,18 @@
       "brand": "oneplus"
     },
     {
-      "id": "gt5pro",
-      "name": "GT 5 Pro",
+      "id": "opopen",
+      "name": "OnePlus Open",
+      "brand": "oneplus"
+    },
+    {
+      "id": "12proplus",
+      "name": "12 Pro+",
+      "brand": "realme"
+    },
+    {
+      "id": "gt3",
+      "name": "GT 3",
       "brand": "realme"
     },
     {
@@ -412,8 +422,8 @@
       "brand": "realme"
     },
     {
-      "id": "gt3",
-      "name": "GT 3",
+      "id": "gt5pro",
+      "name": "GT 5 Pro",
       "brand": "realme"
     },
     {
@@ -427,9 +437,14 @@
       "brand": "realme"
     },
     {
-      "id": "12proplus",
-      "name": "12 Pro+",
-      "brand": "realme"
+      "id": "honor200pro",
+      "name": "Honor 200 Pro",
+      "brand": "honor"
+    },
+    {
+      "id": "magic5pro",
+      "name": "Magic 5 Pro",
+      "brand": "honor"
     },
     {
       "id": "magic6",
@@ -447,11 +462,6 @@
       "brand": "honor"
     },
     {
-      "id": "magic5pro",
-      "name": "Magic 5 Pro",
-      "brand": "honor"
-    },
-    {
       "id": "magicv2",
       "name": "Magic V2",
       "brand": "honor"
@@ -465,16 +475,6 @@
       "id": "magicvs2",
       "name": "Magic Vs2",
       "brand": "honor"
-    },
-    {
-      "id": "honor200pro",
-      "name": "Honor 200 Pro",
-      "brand": "honor"
-    },
-    {
-      "id": "s25ultra",
-      "name": "Galaxy S25 Ultra",
-      "brand": "samsung"
     }
   ],
   "issues": [
@@ -5257,6 +5257,15 @@
       "warrantyDays": 0,
       "eta": "30-60 min",
       "notes": "Free basic diagnosis."
+    },
+    {
+      "modelId": "s25ultra",
+      "issueId": "screen",
+      "type": "fixed",
+      "warrantyDays": 30,
+      "eta": "60min",
+      "notes": "",
+      "price": 1200
     }
   ]
 }

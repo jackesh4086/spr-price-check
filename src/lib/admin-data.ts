@@ -9,6 +9,58 @@ const PRICE_DATA_TTL = 365 * 24 * 60 * 60 * 1000; // 1 year in ms (effectively p
 const hasRedis = () =>
   !!process.env.UPSTASH_REDIS_REST_URL && !!process.env.UPSTASH_REDIS_REST_TOKEN;
 
+// Smart model name comparison for natural sorting
+// e.g., "iPhone 11" < "iPhone 12" < "iPhone 15 Pro" < "iPhone 15 Pro Max"
+function compareModelNames(a: string, b: string): number {
+  // Extract parts: prefix, number, suffix (e.g., "iPhone", "15", "Pro Max")
+  const regex = /^(.+?)\s*(\d+)?\s*(.*)$/i;
+  const matchA = a.match(regex);
+  const matchB = b.match(regex);
+
+  if (!matchA || !matchB) return a.localeCompare(b);
+
+  const [, prefixA, numA, suffixA] = matchA;
+  const [, prefixB, numB, suffixB] = matchB;
+
+  // Compare prefix first
+  const prefixCmp = prefixA.localeCompare(prefixB);
+  if (prefixCmp !== 0) return prefixCmp;
+
+  // Compare numbers
+  const nA = numA ? parseInt(numA, 10) : 0;
+  const nB = numB ? parseInt(numB, 10) : 0;
+  if (nA !== nB) return nA - nB;
+
+  // Compare suffix: base < Plus/+ < Pro < Pro Max
+  const suffixOrder = (s: string): number => {
+    const sl = s.toLowerCase().trim();
+    if (!sl) return 0;
+    if (sl === 'mini') return 1;
+    if (sl === 'plus' || sl === '+') return 2;
+    if (sl === 'pro') return 3;
+    if (sl === 'pro max' || sl === 'ultra') return 4;
+    return 5; // other suffixes
+  };
+
+  const suffixCmpA = suffixOrder(suffixA);
+  const suffixCmpB = suffixOrder(suffixB);
+  if (suffixCmpA !== suffixCmpB) return suffixCmpA - suffixCmpB;
+
+  return suffixA.localeCompare(suffixB);
+}
+
+// Sort models by brand, then by model name (natural sort)
+function sortModels(models: Model[], brands: Brand[]): Model[] {
+  const brandOrder = new Map(brands.map((b, i) => [b.id, i]));
+  return [...models].sort((a, b) => {
+    // Sort by brand order first
+    const brandCmp = (brandOrder.get(a.brand) ?? 999) - (brandOrder.get(b.brand) ?? 999);
+    if (brandCmp !== 0) return brandCmp;
+    // Then by model name
+    return compareModelNames(a.name, b.name);
+  });
+}
+
 export interface Brand {
   id: string;
   name: string;
@@ -61,6 +113,9 @@ export async function getPriceData(): Promise<PriceData> {
 
 // Save entire price data object to Redis and optionally to JSON file
 export async function savePriceData(data: PriceData, writeToFile = false): Promise<void> {
+  // Auto-sort models before saving
+  data.models = sortModels(data.models, data.brands);
+
   await kvSet(PRICE_DATA_KEY, data, PRICE_DATA_TTL);
 
   // Write to JSON file if requested (only works on server-side)
