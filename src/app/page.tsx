@@ -2,11 +2,10 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { getBrands, getModelsByBrand, getIssues, getBrand } from '@/lib/quote';
+import { getBrands, getModelsByBrand, getIssues } from '@/lib/quote';
 
 export default function HomePage() {
   const router = useRouter();
-  const storeBrand = getBrand();
   const brands = getBrands();
   const issues = getIssues();
 
